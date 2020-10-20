@@ -31,28 +31,13 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 public class Interview implements Serializable{
 	
 	/**
-	 * 
+	 * odeti
 	 */
 	private static final long serialVersionUID = 1L;
 
-/*	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private int id;
-	
-	public int getId() {
-		return id;
-	}
-
-	public void setId(int id) {
-		this.id = id;
-	}
-*/
 	@Id
 	@Column(name="interview_id")
 	@GeneratedValue(strategy = GenerationType.AUTO)
-	//@NotNull(message = "interviewId can not be omitted")
-	//@NotBlank(message = "interviewId can not be omitted")
-	//@Size(min = 4,max=30,message = "interviewId must be of 4 to 30 chars in length")
 	private int interviewId;
 	
 	@Column(name="interviewerName")
@@ -71,7 +56,7 @@ public class Interview implements Serializable{
 	@Column(name="usersSkills")
 	@NotNull(message = "usersSkills can not be omitted")
 	@NotBlank(message = "usersSkills can not be omitted")
-	@Size(min = 3,max=30,message = "usersSkills must be of 3 to 30 chars in length")
+	@Size(min = 5,max=30,message = "usersSkills must be of 3 to 30 chars in length")
 	private String usersSkills;
 	
 

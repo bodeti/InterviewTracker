@@ -11,9 +11,4 @@ public interface UserRepository extends JpaRepository<Users, Integer> {
 	boolean existsByUserId(int userId);
 	
 	void deleteByUserId(int userId);
-//	Item findByTitle(String title);
-//	List<Item> findAllByUnit(String unit);
-//	
-//	@Query("SELECT i FROM Item i WHERE i.sellingPrice BETWEEN :lower AND :upper")
-//	List<Item> findAllInSellingPriceRange(double lower,double upper);
 }

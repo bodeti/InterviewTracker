@@ -10,11 +10,6 @@ import com.wellsfargo.fsd.itsa.entity.Interview;
 @Repository
 public interface InterviewRepository extends JpaRepository<Interview, Integer> {
 
-//	Item findByTitle(String title);
-//	List<Item> findAllByUnit(String unit);
-//	
-//	@Query("SELECT i FROM Item i WHERE i.sellingPrice BETWEEN :lower AND :upper")
-//	List<Item> findAllInSellingPriceRange(double lower,double upper);
 	
 	
 
